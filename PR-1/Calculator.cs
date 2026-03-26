@@ -4,7 +4,7 @@ namespace Prac_1
 {
     public class Calculator
     {
-        public Calculator()
+        public Calculator() // constructor to initialise and print the headings
         {
             Console.WriteLine();
             Console.WriteLine();
@@ -14,7 +14,7 @@ namespace Prac_1
         double num1;
         double num2;
 
-        private void GetNums()
+        private void GetNums() // getting userrinputs for the calculation
         {
             Console.Write("\t\t\tEnter Number 1 :    ");
             num1 = Convert.ToInt32(Console.ReadLine());
@@ -24,7 +24,7 @@ namespace Prac_1
             Console.WriteLine();
         }
 
-        private void Compute()
+        private void Compute() // calculating the values entered by user
         {
             Console.WriteLine($"\t\t\tAddition of {num1} & {num2} is :       " + (num1 + num2));
             Console.WriteLine();
@@ -35,7 +35,7 @@ namespace Prac_1
             Console.WriteLine($"\t\t\tDivison of {num1} & {num2} is :        " + Math.Round((num1 / num2), 3));
             Console.WriteLine();
         }
-        public void InitCalc()
+        public void InitCalc() // initialise the getnums() and compute() methods .
         {
             GetNums();
             Compute();
